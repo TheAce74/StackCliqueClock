@@ -17,3 +17,17 @@
 %link {
   text-decoration: none;
 }
+
+:root {
+  --clr-primary-400: hsl(306, 89%, 26%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-900: hsl(244, 20%, 17%);
+  --clr-neutral-600: hsla(0, 0%, 14%, 0.46);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}

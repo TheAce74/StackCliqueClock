@@ -1,0 +1,49 @@
+@use "../base" as *;
+
+.dashboard {
+  .user {
+    @extend .flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 4.5em;
+    aspect-ratio: 1;
+    text-align: center;
+    position: relative;
+    border: 2px solid #ffc107;
+    border-radius: 50%;
+    font-weight: 600;
+    background-color: #212529;
+    color: white;
+
+    span:not(:has(> button)) {
+      font-size: 1.5rem;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 4.5em;
+      aspect-ratio: 1;
+    }
+
+    &:has(img) {
+      background-color: transparent !important;
+    }
+
+    button {
+      @extend %button;
+      background-color: #ffc107;
+      color: #212529;
+      border-radius: 50%;
+      padding: 0.3em;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      translate: 25% 25%;
+      transition: background-color 0.3s;
+
+      &:is(:hover, :focus-visible) {
+        background-color: #c6980cf7;
+      }
+    }
+  }
+}

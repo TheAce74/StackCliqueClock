@@ -1,0 +1,56 @@
+@use "../../base" as *;
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  text-align: center;
+}
+
+.selected-option {
+  @extend .flex;
+  justify-content: flex-start;
+  gap: 2.1em;
+  padding: 0.6em 0.8em;
+  border: 2px solid #dee2e6;
+  border-radius: 0.3em;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  opacity: 0.8;
+
+  .arrow {
+    fill: hsla(0, 0%, 0%, 0.8);
+    position: absolute;
+    right: 0.8em;
+  }
+
+  &--selected {
+    font-weight: 500;
+    opacity: 1;
+  }
+}
+
+.options {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 0fr;
+  left: 0;
+  width: 100%;
+  transition: grid-template-rows 0.3s, border 0.3s;
+
+  &--shown {
+    grid-template-rows: 1fr;
+    border: 2px solid #dee2e6;
+    border-top: none;
+  }
+
+  .wrapper {
+    overflow: hidden;
+  }
+}
+
+.dropdown-icon {
+  font-size: 1.5rem;
+}
