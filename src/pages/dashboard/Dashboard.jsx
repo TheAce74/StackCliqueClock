@@ -190,7 +190,7 @@ function Dashboard() {
       offset: 0,
       sortBy: { column: "name", order: "asc" },
     });
-    if (data && info.id !== "") {
+    if (data.length !== 0 && info.id !== "") {
       setInfo((prevInfo) => {
         return {
           ...prevInfo,
