@@ -29,7 +29,7 @@ StackCliqueClock is a sleek and intuitive web application designed to help you m
    yarn dev
    ```
 
-   The app will be accessible at [http://localhost:3000](http://localhost:3000).
+   The app will be accessible at [http://localhost:3000](http://localhost:3000). Please note that the app won't run well locally due to the fact that the supabase url and key environment variables are strictly confidential. You can access the [live site](https://stackcliqueclock.netlify.app) for full functionality.
 
 4. **Explore and Enjoy!**
 
@@ -38,3 +38,8 @@ StackCliqueClock is a sleek and intuitive web application designed to help you m
 - Frontend: React.js
 - Backend and Database(BaaS): Supabase
 - Styling: SCSS, Bootstrap
+
+## Sample Account
+
+- **Email:** test.aeworks@gmail.com
+- **Password:** 12345678
